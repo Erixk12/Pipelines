@@ -22,7 +22,7 @@ linter_pkg = ''
 if usar_linter.lower() == 's':
     linter = input("¿Qué herramienta para cód estático?: ") or "flake8"
     linter_pkg = linter.split()[0]
-    cmd_linter = input(f"Comando (por defecto: '{linter} .'): ") or f"{linter} ."
+    cmd_linter = input(f"'{linter} .'): ") or f"{linter} ."
     steps_linter = f"""
     - name: Instalar herramienta de análisis estático
       run: pip install {linter_pkg}
@@ -36,7 +36,7 @@ security_pkg = ''
 if usar_security.lower() == 's':
     security = input("¿Herramienta para análisis de seguridad: ") or "bandit"
     security_pkg = security.split()[0]
-    cmd_security = input(f"Comando para (por defecto: '{security} .'): ") or f"{security} ."
+    cmd_security = input(f"{security}") or f"{security} ."
     steps_security = f"""
     - name: Instalar herramienta de análisis de seguridad
       run: pip install {security_pkg}
