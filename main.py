@@ -1,6 +1,9 @@
 import os
 from pathlib import Path
 
+# Erick Lopez
+# Generador de pipelines para GitHub Actions - Python
+
 print("\nBienvenido al generador de pipelines para GitHub Actions.\n")
 
 # Versión de Python
